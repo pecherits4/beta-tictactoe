@@ -5,15 +5,15 @@
 }
 
 :root {
-  --bg:          #0A0A0A;
-  --surface:     #111111;
-  --text:        #FFFFFF;
-  --text-muted:  #444444;
+  --bg:          #E5E5E5;
+  --surface:     #FFFFFF;
+  --text:        #111111;
+  --text-muted:  #888888;
   --accent:      #FFE600;
-  --border:      #FFFFFF;
-  --border-dim:  #222222;
-  --x-color:     #FFFFFF;
-  --o-color:     #FFE600;
+  --border:      #111111;
+  --border-dim:  #CCCCCC;
+  --x-color:     #111111;
+  --o-color:     #5A5A5A;
 }
 
 html, body {
@@ -175,7 +175,9 @@ body {
 }
 
 .status-area.win .status-player {
-  color: var(--accent);
+  color: var(--text);
+  background: var(--accent);
+  padding: 0 6px;
 }
 
 .status-area.draw {
@@ -216,7 +218,7 @@ body {
 }
 
 .cell:hover:not(.filled):not(:disabled) {
-  background: #1a1a1a;
+  background: #F0F0F0;
 }
 
 .cell:active:not(.filled):not(:disabled) {
@@ -238,7 +240,7 @@ body {
 .cell.winning-cell {
   background: var(--accent);
   border-color: var(--accent);
-  color: var(--bg);
+  color: var(--text);
   animation: pulse-win 0.5s ease forwards;
 }
 
