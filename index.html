@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BETA × КРЕСТИКИ-НОЛИКИ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-logo">BETA<span class="logo-x">×</span></div>
+    <div class="header-nav">
+      <span class="nav-label">КРЕСТИКИ-НОЛИКИ</span>
+      <span class="nav-year">2026</span>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <div class="scoreboard">
+      <div class="score-block score-block--x" id="score-x-block">
+        <div class="score-player">ИГРОК</div>
+        <div class="score-symbol">X</div>
+        <div class="score-value" id="score-x">0</div>
+      </div>
+      <div class="score-divider">—</div>
+      <div class="score-block score-block--o" id="score-o-block">
+        <div class="score-player">ИГРОК</div>
+        <div class="score-symbol score-symbol--o">O</div>
+        <div class="score-value" id="score-o">0</div>
+      </div>
+    </div>
+
+    <div class="status-area" id="status-area">
+      <span class="status-label">ХОД</span>
+      <span class="status-player" id="status-player">X</span>
+    </div>
+
+    <div class="board" id="board">
+      <button class="cell" data-index="0" aria-label="Клетка 1"></button>
+      <button class="cell" data-index="1" aria-label="Клетка 2"></button>
+      <button class="cell" data-index="2" aria-label="Клетка 3"></button>
+      <button class="cell" data-index="3" aria-label="Клетка 4"></button>
+      <button class="cell" data-index="4" aria-label="Клетка 5"></button>
+      <button class="cell" data-index="5" aria-label="Клетка 6"></button>
+      <button class="cell" data-index="6" aria-label="Клетка 7"></button>
+      <button class="cell" data-index="7" aria-label="Клетка 8"></button>
+      <button class="cell" data-index="8" aria-label="Клетка 9"></button>
+    </div>
+
+    <button class="btn-new-game" id="btn-new-game">НОВАЯ ИГРА</button>
+
+  </main>
+
+  <footer class="footer">
+    <span class="footer-copy">© BETA DISRUPT</span>
+    <span class="footer-desc">Визионерская дизайн-компания</span>
+  </footer>
+
+  <script src="game.js"></script>
+</body>
+</html>
